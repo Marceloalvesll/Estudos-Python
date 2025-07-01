@@ -63,7 +63,7 @@ elif vendas >= 5000 and vendas_empresa > meta_empresa:
 else:
     bonus = 0
 
-print("Bonus", bonus)
+# 
 
 
 if not vendas_empresa > meta_empresa:
@@ -78,5 +78,21 @@ else:
     else:
         bonus = 0
 
-print("Bonus", bonus)
+# print("Bonus", bonus)
 
+
+
+# exercicio desafios
+# sistema de consulta de preço
+
+precos = [1500, 1000, 800, 2000]
+produtos = ["celular", "camera", "fone de ouvido", "monitor"]
+
+busca_produto = input("Digite o nome do produto: ")
+busca_produto = busca_produto.lower()
+if busca_produto in produtos:
+    posicao_produto = produtos.index(busca_produto)
+    custo_produto = precos[posicao_produto]
+    print("O preço do produto é", custo_produto)
+else:
+    print("Produto não cadastrado")
